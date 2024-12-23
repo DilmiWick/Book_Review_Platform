@@ -1,14 +1,14 @@
 # Book_Review_Platform
 The platform allows users to register, view, add, edit, and delete books, as well as write and manage reviews for those books. Users can search for books, see the latest reviews, and rate books based on their personal experiences.
 
-Features
+## Features
 1) User Registration and Authentication: Users can sign up, log in, and manage their accounts.
 2) CRUD Operations for Books: Users can add new books, view, edit, and delete existing books.
 3) Review System: Each book has a review section where users can add, edit, and delete reviews.
 4) Book Rating: Users can rate books from 1-5 stars.
 5) Search and Filter: Users can search for books by title, author, genre, or rating.
 
-# Backend: .NET Core (C#)
+## Backend: .NET Core (C#)
 1) Technologies:
     Framework: ASP.NET 
     CoreDatabase: MySQL
@@ -27,7 +27,7 @@ Features
     PUT /api/reviews/{id}: Edit a review
     DELETE /api/reviews/{id}: Delete a review
 
-# Frontend: React
+## Frontend: React
 1) Technologies:
     Frontend Framework: React
     State Management: React Context or Redux for managing user state and book data
@@ -41,9 +41,10 @@ Features
     ReviewForm: Form to add or edit reviews
     Auth: Components for user login and registration
 
-# Database: MySQL
-
-# Testing Plan
+## Database: MySQL
+    The database has implemented with MySQL.
+    
+## Testing Plan
 1) Unit Testing:
     Test individual components, services, and API endpoints to ensure each function works correctly in isolation.
     Use xUnit for backend testing in .NET.
