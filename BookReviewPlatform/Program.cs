@@ -6,9 +6,11 @@ using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), 
         new MySqlServerVersion(new Version(8, 0, 27))));
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
