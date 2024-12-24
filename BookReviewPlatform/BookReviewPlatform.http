@@ -1,0 +1,6 @@
+@BookReviewPlatform_HostAddress = http://localhost:5236
+
+GET {{BookReviewPlatform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
